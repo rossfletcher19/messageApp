@@ -11,8 +11,6 @@ import android.widget.TextView;
 import com.example.guest.messages.R;
 import com.example.guest.messages.models.Chat;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 import butterknife.BindView;

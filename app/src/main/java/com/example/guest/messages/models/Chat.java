@@ -1,7 +1,9 @@
 package com.example.guest.messages.models;
 
 
+import org.parceler.Parcel;
 
+@Parcel
 public class Chat {
     private String message;
     private String sender;
