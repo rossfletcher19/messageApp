@@ -45,30 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(com.example.guest.messages.R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mMessageRef = FirebaseDatabase.getInstance().getReference(Constants.FIREBASE_CHILD_MESSAGE);
-
-        mMessageRef = FirebaseDatabase
-                .getInstance()
-                .getReference()
-                .child(Constants.FIREBASE_CHILD_MESSAGE);
-
-        mMessageRefListener = mMessageRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) { //something changed!
-                for (DataSnapshot locationSnapshot : dataSnapshot.getChildren()) {
-                    String message = locationSnapshot.getValue().toString();
-                    Log.d("Messages updated", "message: " + message); //log
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) { //update UI here if error occurred.
-
-            }
-        });
-
-
-        bSubmitMessageLabel.setOnClickListener(this);
 
     }
 
