@@ -36,7 +36,7 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tvMainHelloMsg) TextView tvMainHelloMsgLabel;
     private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListener;git
+    private FirebaseAuth.AuthStateListener mAuthListener;
 
 
 
